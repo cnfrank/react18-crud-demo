@@ -7,7 +7,7 @@ function Layout(props) {
     <>
     <Navbar bg ="primary" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Frank's Skills</Navbar.Brand>
+        <Navbar.Brand href="#home">React API Demo</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         
       </Container>

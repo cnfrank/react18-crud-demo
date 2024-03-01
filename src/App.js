@@ -1,11 +1,12 @@
 import './App.css';
 import Layout from './components/shared/Layout';
+import AllCustomer from './pages/AllCustomer';
 
 function App() {
   return (
     <>
       <Layout>
-        <h2>Hello world</h2>
+        <AllCustomer></AllCustomer>
       </Layout>
     </>
   );
