@@ -48,7 +48,8 @@ function AllCustomer() {
 
   return (
     <>
-      <Row xs={1} md={4} className="g-4">
+      
+      <Row xs={1} md={3} className="g-4">
         {heroes.map((hero) => {
           return (
             <Col key={hero.id}>
@@ -56,7 +57,7 @@ function AllCustomer() {
                 <Card.Img variant="top" src={"/assets/hero/"+hero.imageUrl} />
                 <Card.Body>
                   <Card.Title>{hero.heroName}</Card.Title>
-                  <Card.Text>{hero.powers}</Card.Text>
+                  <Card.Text class="truncate-3-lines" >{hero.powers}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
