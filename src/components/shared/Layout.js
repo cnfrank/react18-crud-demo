@@ -1,16 +1,13 @@
 import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+import Header from './Header';
+import Footer from './Footer';
 
 function Layout(props) {
   return (
     <>
-      <Navbar bg="primary" variant="dark" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">React API Demo</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        </Container>
-      </Navbar>
+      <Header></Header>
       <Container className="p-5">{props.children}</Container>
+      <Footer></Footer>
     </>
   );
 }
