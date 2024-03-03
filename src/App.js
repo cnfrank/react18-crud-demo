@@ -1,13 +1,24 @@
-import './App.css';
-import Layout from './components/shared/Layout';
-import AllCustomer from './pages/AllCustomer';
+import "./App.css";
+
+import AddItem from "./pages/AddItem";
+
+import Home from "./pages/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/add",
+      element: <AddItem />,
+    },
+  ]);
   return (
     <>
-      <Layout>
-        <AllCustomer></AllCustomer>
-      </Layout>
+      <RouterProvider router={router} />
     </>
   );
 }
